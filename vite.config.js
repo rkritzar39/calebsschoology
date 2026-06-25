@@ -7,7 +7,7 @@ const isUserSite = repoName.endsWith('.github.io')
 const base = process.env.GITHUB_ACTIONS
   ? isUserSite
     ? '/'
-    : `/${repoName}/`
+    : /${repoName}/
   : '/'
 
 export default defineConfig({
